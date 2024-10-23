@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Slabien&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <audio id="myAudio" src="Stilldre.mp3"></audio>
+  <h1 class="Main-Header">Professional To-Do List</h1>
+  <nav>
+    <ul>
+        <li><button id="aboutbutton">About</button></li>
+        <li><button id="servicebutton">Services</button></li>
+        <li><button id="contactbutton">Contact</button></li>
+    </ul>
+  </nav>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <div class="task-input">
+        <input type="text" id="task" placeholder="Enter task..." />
+        <input type="number" id="duration" placeholder="Duration (mins)" />
+        <button onclick=addTask()>Add Task</button>
+        
+        
+      </div>
+
+      <div class="task-list">
+        <h2>Tasks</h2>
+        <ul id="tasks"></ul>
+      </div>
+  
+      <div class="gradient"></div>
+    </div>
+    <div class="TaskSch">
+      
+      
+      <h1>Task Scheduler</h1>
+
+      <div class="containerSch">
+          <input type="text" id="taskInput" placeholder="Task description">
+          <input type="date" id="dateInput">
+          <button onclick="addTaskSch()">Add Task</button>
+      </div>
+      <div class="task-container">
+        <h2>Scheduled Tasks</h2>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+    <div class="navi" id="tarabout">
+      <h3>ABOUT US</h3>
+      <p>Welcome to Professional To-Do List, the ultimate platform designed to help you take control of your tasks with ease and precision. We believe that productivity should be simple, which is why our tool offers a clean and intuitive interface for managing your tasks and deadlines effectively. Whether you're juggling personal projects, work assignments, or everyday responsibilities, Professional To-Do List makes it easy to organize, prioritize, and track progress.
+
+        Our platform goes beyond basic task management by incorporating seamless date scheduling, helping you map out deadlines, set reminders, and stay on top of your commitments. You’ll never miss an important date or deadline again! Professional To-Do List is designed to adapt to your needs, whether you're planning for the week ahead or breaking down larger goals into manageable steps.
+        
+        Our mission is to enhance your productivity without complicating your workflow. With Professional To-Do List, you get a reliable, straightforward tool that ensures you stay organized, focused, and always ahead of your schedule. Experience simplicity in task management and let us help you achieve more every day.
+      </p>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="navi" id="tarservice">
+      <h3>SERVICES</h3>
+      <p>
+        Stay Organized, Stay Productive with Professional To-Do List.
+        Our to-do list service is designed to help you manage tasks effortlessly, prioritize effectively, and stay on top of your schedule with intuitive date-based planning and reminders."
+        Some of the key features are:
+        Task Creation & Management: Easily add tasks, organize them by categories, and mark them as completed.
+        Date Scheduling & Deadlines: Assign due dates to tasks, and schedule reminders to stay on track.
+        Progress Tracking: Monitor your productivity with completion stats and progress tracking features.
+        <br><br>
+        Get Started Today
+
+      </p>
+    </div>
+    <br><br><br><br><br>
+    <div class="navi" id="tarcontact">
+      <h3>CONTACT US</h3>
+      <p>
+        phone number: 8078510580 
+        <br>
+        email id: <a href="mailto:devan7197@gmail.com">devan7197@gmail.com</a>
+        <span class="tab"></span>
+      </p>
+    </div>
+  <script src="script.js"></script>
+  <br><br><br>
+  <footer>
+    <p>&copy; 2024 Professional Todo List. No rights reserved lol.</p>
+  </footer>
+</body>
+</html>
